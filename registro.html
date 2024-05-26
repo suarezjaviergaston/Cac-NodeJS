@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GigaRol - Registro</title>
+  <link rel="icon" href="/img/Logotipo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/estilos/style.css">
+</head>
+
+<body>
+
+  <!--Header-->
+
+  <header>
+
+    <div class="bloque_header bloque_header_vacio"></div>
+
+    <div id="titulocont" class="bloque_header bloque_header_centro">
+      <img id="logo" src="/img/Logotipo.png" alt="logo">
+      <a href="index.html">
+        <h1>GigaRol</h1>
+      </a>
+    </div>
+
+    <div class="bloque_header bloque_header_derecho">
+      <img src="/img/shopping-cart_icon-icons.com_65051.svg" alt="carrito" class="icono_carrito">
+      <a href="registro.html">
+        <img src="/img/Gender_Neutral_User_icon-icons.com_55902.svg" alt="login" class="icono_login">
+      </a>
+    </div>
+  </header>
+  <div class="navegador">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catalogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+
+    <!--Formulario de Registro-->
+
+    <section class="registro">
+      <div class="p">
+        <p>Formulario de registro</p>
+      </div>
+
+      <form action="" method="post" id="formulario">
+        <div class="divTituloForm">
+          <h3 class="tituloForm">Crear Cuenta</h3>
+        </div>
+
+        <div class="contenedor-inputs">
+          <fieldset>
+            <legend>Datos Personales</legend>
+            <div class="grupo">
+              <label for="nombre">Nombre</label>
+              <br>
+              <input type="text" name="nombre" id="nombre" minlength="2" class="input-100" required>
+            </div>
+            <div class="grupo">
+              <label for="apellido">Apellido</label>
+              <br>
+              <input type="text" name="apellido" id="apellido" class="input-100" required>
+            </div>
+            <div class="grupo">
+              <label for="sexo">Sexo</label>
+              <input type="radio" name="sexo" value="Masculino" id="sexo" checked>
+              Masculino
+
+              <input type="radio" name="sexo" value="Femenino"> Femenino
+            </div>
+            <div class="grupo">
+              <label for="dni">Documento</label>
+              <br>
+              <input type="number" name="dni" id="dni" class="input-100" required>
+            </div>
+
+            <div class="grupo">
+              <label for="dia_nacimiento">Fecha de Nacimiento</label>
+              <br>
+              <select name="dia_nacimiento" id="dia_nacimiento" class="input-24" required>
+                <option value="">Día</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+
+              <select name="mes_nacimiento" id="mes_nacimiento" class="input-40" required>
+                <option value="">Mes</option>
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+              </select>
+              <input type="number" name="año_nacimiento" id="año_nacimiento" class="input-26" required placeholder="Año"
+                value="1980">
+            </div>
+            <div class="grupo">
+              <label for="codigo_area">Teléfono</label>
+              <br>
+              <input type="number" name="codigo_area" id="codigo_area" class="input-48" required
+                placeholder="Código de área" value="11">
+              <input type="number" name="numero" id="numero" class="input-48" required placeholder="Número">
+            </div>
+          </fieldset>
+
+          <fieldset class="contenedor-inputs">
+
+            <legend>Domicilio</legend>
+
+            <div class="grupo">
+              <label for="calle">Calle</label>
+              <br>
+              <input type="text" name="calle" id="calle" class="input-100" required>
+            </div>
+
+            <div class="grupo">
+              <label for="numero_calle">Número</label>
+              <br>
+              <input type="number" name="numero_calle" id="numero_calle" class="input-100" required>
+            </div>
+
+            <div class="grupo">
+              <label for="piso">Piso</label>
+              <br>
+              <input type="number" name="piso" id="piso" class="input-100">
+            </div>
+
+            <div class="grupo">
+              <label for="departamento">Departamento</label>
+              <br>
+              <input type="text" name="departamento" id="departamento" class="input-100">
+            </div>
+
+          </fieldset>
+
+          <div class="grupo">  
+            <label for="email">Correo Electrónico</label>
+            <br>
+            <input type="email" name="email" id="email" class="input-100" required>
+          </div>
+
+          <div class="grupo">
+            <label for="clave">Contraseña</label>
+            <br>
+            <input type="password" name="clave" id="clave" class="input-100" required>
+          </div>
+
+          <button type="submit" class="boton">Enviar</button>
+          <p class="warnings" id="warnings"></p>
+
+        </div>
+
+      </form>
+
+    </section>
+  </main>
+
+  <!--Footer-->
+  
+  <footer>
+
+    <ul>
+      <li>santybord@gmail.com</li>
+      <li>Tel: 112233-4455</li>
+      <li>copyright; 2024</li>
+    </ul>
+
+  </footer>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
